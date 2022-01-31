@@ -40,7 +40,7 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 
 // RunMigrations is option to run migrations.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
-	return testcontainersql.RunMigrations(migrationSource, DSN(`$POSTGRES_USER`, `$POSTGRES_PASSWORD`, `$POSTGRES_DB`))
+	return testcontainersql.RunMigrations(migrationSource, DSN(`$POSTGRES_DB`, `$POSTGRES_USER`, `$POSTGRES_PASSWORD`))
 }
 
 // DSN returns the database dsn for connecting to server.

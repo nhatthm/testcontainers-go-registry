@@ -17,9 +17,9 @@ import (
 func TestRunMigrations(t *testing.T) {
 	t.Parallel()
 
-	dbName := "test"
-	dbUser := "test"
-	dbPassword := "test"
+	dbName := "db"
+	dbUser := "user"
+	dbPassword := "password"
 	migrationSource := "file://./resources/migrations/"
 
 	c, err := testcontainerpostgres.StartGenericContainer(context.Background(),

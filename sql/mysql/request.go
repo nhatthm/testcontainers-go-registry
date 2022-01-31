@@ -46,7 +46,7 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 
 // RunMigrations is option to run migrations.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
-	return testcontainersql.RunMigrations(migrationSource, fmt.Sprintf("mysql://%s", DSN(`$MYSQL_USER`, `$MYSQL_PASSWORD`, `$MYSQL_DATABASE`)))
+	return testcontainersql.RunMigrations(migrationSource, fmt.Sprintf("mysql://%s", DSN(`$MYSQL_DATABASE`, `$MYSQL_USER`, `$MYSQL_PASSWORD`)))
 }
 
 // DSN returns the database dsn for connecting to server.
