@@ -73,6 +73,61 @@ func startMySQL() (testcontainers.Container, error) {
 }
 ```
 
+## Options
+
+### Change Image Tag
+
+```go
+package example
+
+import (
+	"context"
+
+	testcontainerspostgres "github.com/nhatthm/testcontainers-go-registry/sql/postgres"
+	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+)
+
+const (
+	dbName     = "test"
+	dbUser     = "test"
+	dbPassword = "test"
+)
+
+func startMySQL() (testcontainers.Container, error) {
+	return testcontainerspostgres.StartGenericContainer(context.Background(),
+		dbName, dbUser, dbPassword,
+		testcontainers.WithImageTag("13-alpine"),
+	)
+}
+```
+
+### Change Image Name
+
+```go
+package example
+
+import (
+	"context"
+
+	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainersmysql "github.com/nhatthm/testcontainers-go-registry/sql/mysql"
+)
+
+const (
+	dbName     = "test"
+	dbUser     = "test"
+	dbPassword = "test"
+)
+
+func startMySQL() (testcontainers.Container, error) {
+	return testcontainersmysql.StartGenericContainer(context.Background(),
+		dbName, dbUser, dbPassword,
+		testcontainers.WithImageName("mariadb"),
+		testcontainers.WithImageTag("10.7"),
+	)
+}
+```
+
 ## Donation
 
 If this project help you reduce time to develop, you can give me a cup of coffee :)
