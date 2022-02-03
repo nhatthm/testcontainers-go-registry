@@ -44,8 +44,8 @@ func TestRunMigrations(t *testing.T) {
 		}),
 	)
 
+	assert.NoError(t, err)
 	require.NotNil(t, c)
-	require.NoError(t, err)
 
 	_ = testcontainers.StopGenericContainers(context.Background(), c) // nolint: errcheck
 }
