@@ -5,6 +5,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"strings"
 	"testing"
 
 	_ "github.com/go-sql-driver/mysql" // Database driver
@@ -32,12 +33,14 @@ func TestRunMigrations(t *testing.T) {
 				return err
 			}
 
+			defer resp.Body.Close() // nolint: errcheck
+
 			data, err := io.ReadAll(resp.Body)
 			if err != nil {
 				return err
 			}
 
-			assert.Equal(t, `[]`, string(data))
+			assert.True(t, strings.HasPrefix(string(data), "["))
 
 			return nil
 		}),
