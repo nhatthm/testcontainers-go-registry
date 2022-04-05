@@ -11,6 +11,7 @@ require (
 	github.com/nhatthm/testcontainers-go-extra v0.1.0
 	github.com/stretchr/testify v1.7.1
 	github.com/testcontainers/testcontainers-go v0.12.1-0.20220203161022-95e84a09f45e
+	go.mongodb.org/mongo-driver v1.7.0
 )
 
 require (
@@ -23,9 +24,11 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
+	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
+	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
@@ -36,6 +39,7 @@ require (
 	github.com/jackc/pgproto3/v2 v2.2.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b // indirect
 	github.com/jackc/pgtype v1.10.0 // indirect
+	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/lib/pq v1.10.4 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/moby/sys/mount v0.3.1 // indirect
@@ -48,10 +52,15 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
+	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
+	github.com/xdg-go/scram v1.0.2 // indirect
+	github.com/xdg-go/stringprep v1.0.2 // indirect
+	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
 	golang.org/x/net v0.0.0-20220403103023-749bd193bc2b // indirect
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
 	golang.org/x/sys v0.0.0-20220405052023-b1e9470b6e64 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/genproto v0.0.0-20220401170504-314d38edb7de // indirect
