@@ -1,4 +1,4 @@
-package testcontainerspostgres
+package postgres
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/nhatthm/testcontainers-go-extra/wait"
 
-	testcontainersql "github.com/nhatthm/testcontainers-go-registry/sql"
+	db "github.com/nhatthm/testcontainers-go-registry/database"
 )
 
 // Request creates a new request for starting a postgres server.
@@ -40,7 +40,7 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 
 // RunMigrations is option to run migrations.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
-	return testcontainersql.RunMigrations(migrationSource, DSN(`$POSTGRES_DB`, `$POSTGRES_USER`, `$POSTGRES_PASSWORD`))
+	return db.RunMigrations(migrationSource, DSN(`$POSTGRES_DB`, `$POSTGRES_USER`, `$POSTGRES_PASSWORD`))
 }
 
 // DSN returns the database dsn for connecting to server.

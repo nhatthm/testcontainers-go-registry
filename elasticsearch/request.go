@@ -1,4 +1,4 @@
-package testcontainerselasticsearch
+package elasticsearch
 
 import (
 	"time"

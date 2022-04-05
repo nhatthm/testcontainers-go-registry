@@ -1,4 +1,4 @@
-package testcontainersql
+package database
 
 import (
 	"context"
