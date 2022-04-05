@@ -1,4 +1,4 @@
-package testcontainerselasticsearch_test
+package elasticsearch_test
 
 import (
 	"context"
@@ -13,15 +13,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	testcontainerselasticsearch "github.com/nhatthm/testcontainers-go-registry/elasticsearch"
+	es "github.com/nhatthm/testcontainers-go-registry/elasticsearch"
 )
 
 func TestRunMigrations(t *testing.T) {
 	t.Parallel()
 
-	c, err := testcontainerselasticsearch.StartGenericContainer(context.Background(),
+	c, err := es.StartGenericContainer(context.Background(),
 		testcontainers.ContainerCallback(func(context.Context, testcontainers.Container, testcontainers.ContainerRequest) error {
-			esURL := os.ExpandEnv(testcontainerselasticsearch.URL())
+			esURL := os.ExpandEnv(es.URL())
 
 			request, err := http.NewRequest(http.MethodGet, esURL+"_cat/indices?format=json", nil)
 			if err != nil {

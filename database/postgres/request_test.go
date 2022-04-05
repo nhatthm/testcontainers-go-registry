@@ -1,4 +1,4 @@
-package testcontainerspostgres_test
+package postgres_test
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	testcontainerpostgres "github.com/nhatthm/testcontainers-go-registry/sql/postgres"
+	pg "github.com/nhatthm/testcontainers-go-registry/database/postgres"
 )
 
 func TestRunMigrations(t *testing.T) {
@@ -22,11 +22,11 @@ func TestRunMigrations(t *testing.T) {
 	dbPassword := "password"
 	migrationSource := "file://./resources/migrations/"
 
-	c, err := testcontainerpostgres.StartGenericContainer(context.Background(),
+	c, err := pg.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
-		testcontainerpostgres.RunMigrations(migrationSource),
+		pg.RunMigrations(migrationSource),
 		testcontainers.ContainerCallback(func(context.Context, testcontainers.Container, testcontainers.ContainerRequest) error {
-			db, err := sql.Open("pgx", os.ExpandEnv(testcontainerpostgres.DSN(dbName, dbUser, dbPassword)))
+			db, err := sql.Open("pgx", os.ExpandEnv(pg.DSN(dbName, dbUser, dbPassword)))
 			if err != nil {
 				return err
 			}

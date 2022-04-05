@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	testcontainermysql "github.com/nhatthm/testcontainers-go-registry/sql/mysql"
+	mysql "github.com/nhatthm/testcontainers-go-registry/database/mysql"
 )
 
 func TestRunMigrations(t *testing.T) {
@@ -22,11 +22,11 @@ func TestRunMigrations(t *testing.T) {
 	dbPassword := "password"
 	migrationSource := "file://./resources/migrations/"
 
-	c, err := testcontainermysql.StartGenericContainer(context.Background(),
+	c, err := mysql.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
-		testcontainermysql.RunMigrations(migrationSource),
+		mysql.RunMigrations(migrationSource),
 		testcontainers.ContainerCallback(func(context.Context, testcontainers.Container, testcontainers.ContainerRequest) error {
-			db, err := sql.Open("mysql", os.ExpandEnv(testcontainermysql.DSN(dbName, dbUser, dbPassword)))
+			db, err := sql.Open("mysql", os.ExpandEnv(mysql.DSN(dbName, dbUser, dbPassword)))
 			if err != nil {
 				return err
 			}

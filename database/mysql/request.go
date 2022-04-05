@@ -9,7 +9,7 @@ import (
 	extrawait "github.com/nhatthm/testcontainers-go-extra/wait"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	testcontainersql "github.com/nhatthm/testcontainers-go-registry/sql"
+	db "github.com/nhatthm/testcontainers-go-registry/database"
 )
 
 // Request creates a new request for starting a mysql server.
@@ -46,7 +46,7 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 
 // RunMigrations is option to run migrations.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
-	return testcontainersql.RunMigrations(migrationSource, fmt.Sprintf("mysql://%s", DSN(`$MYSQL_DATABASE`, `$MYSQL_USER`, `$MYSQL_PASSWORD`)))
+	return db.RunMigrations(migrationSource, fmt.Sprintf("mysql://%s", DSN(`$MYSQL_DATABASE`, `$MYSQL_USER`, `$MYSQL_PASSWORD`)))
 }
 
 // DSN returns the database dsn for connecting to server.
