@@ -19,6 +19,30 @@ Common Image Registry for Testcontainers-Go
 go get github.com/nhatthm/testcontainers-go-registry
 ```
 
+## Mongo
+
+```go
+package example
+
+import (
+	"context"
+
+	"github.com/nhatthm/testcontainers-go-registry/database/mongo"
+	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+)
+
+const (
+	dbName          = "test"
+	migrationSource = "file://./resources/migrations/"
+)
+
+func startMongoDB() (testcontainers.Container, error) {
+	return mongo.StartGenericContainer(context.Background(),
+		mongo.RunMigrations(migrationSource, dbName),
+	)
+}
+```
+
 ## MySQL
 
 ```go
@@ -27,7 +51,7 @@ package example
 import (
 	"context"
 
-	testcontainersmysql "github.com/nhatthm/testcontainers-go-registry/sql/mysql"
+	"github.com/nhatthm/testcontainers-go-registry/database/mysql"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -39,9 +63,9 @@ const (
 )
 
 func startMySQL() (testcontainers.Container, error) {
-	return testcontainersmysql.StartGenericContainer(context.Background(),
+	return mysql.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
-		testcontainersmysql.RunMigrations(migrationSource),
+		mysql.RunMigrations(migrationSource),
 	)
 }
 ```
@@ -54,7 +78,7 @@ package example
 import (
 	"context"
 
-	testcontainerspostgres "github.com/nhatthm/testcontainers-go-registry/sql/postgres"
+	"github.com/nhatthm/testcontainers-go-registry/database/postgres"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -65,10 +89,10 @@ const (
 	migrationSource = "file://./resources/migrations/"
 )
 
-func startMySQL() (testcontainers.Container, error) {
-	return testcontainerspostgres.StartGenericContainer(context.Background(),
+func startPostgres() (testcontainers.Container, error) {
+	return postgres.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
-		testcontainerspostgres.RunMigrations(migrationSource),
+		postgres.RunMigrations(migrationSource),
 	)
 }
 ```
@@ -83,7 +107,7 @@ package example
 import (
 	"context"
 
-	testcontainerspostgres "github.com/nhatthm/testcontainers-go-registry/sql/postgres"
+	"github.com/nhatthm/testcontainers-go-registry/database/postgres"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -94,7 +118,7 @@ const (
 )
 
 func startMySQL() (testcontainers.Container, error) {
-	return testcontainerspostgres.StartGenericContainer(context.Background(),
+	return postgres.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
 		testcontainers.WithImageTag("13-alpine"),
 	)
@@ -110,7 +134,7 @@ import (
 	"context"
 
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
-	testcontainersmysql "github.com/nhatthm/testcontainers-go-registry/sql/mysql"
+	"github.com/nhatthm/testcontainers-go-registry/database/mysql"
 )
 
 const (
@@ -120,7 +144,7 @@ const (
 )
 
 func startMySQL() (testcontainers.Container, error) {
-	return testcontainersmysql.StartGenericContainer(context.Background(),
+	return mysql.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
 		testcontainers.WithImageName("mariadb"),
 		testcontainers.WithImageTag("10.7"),
