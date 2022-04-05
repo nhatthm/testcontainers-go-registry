@@ -1,4 +1,4 @@
-package testcontainersmysql_test
+package mysql_test
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mysql "github.com/nhatthm/testcontainers-go-registry/database/mysql"
+	"github.com/nhatthm/testcontainers-go-registry/database/mysql"
 )
 
 func TestRunMigrations(t *testing.T) {

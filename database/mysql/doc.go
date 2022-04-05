@@ -1,2 +1,2 @@
-// Package testcontainersmysql provides setup for spinning up a mysql container.
-package testcontainersmysql
+// Package mysql provides setup for spinning up a mysql container.
+package mysql

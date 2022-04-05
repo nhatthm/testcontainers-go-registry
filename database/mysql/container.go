@@ -1,4 +1,4 @@
-package testcontainersmysql
+package mysql
 
 import (
 	"context"
