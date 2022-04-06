@@ -11,7 +11,7 @@ require (
 	github.com/nhatthm/testcontainers-go-extra v0.1.0
 	github.com/stretchr/testify v1.7.1
 	github.com/testcontainers/testcontainers-go v0.12.1-0.20220203161022-95e84a09f45e
-	go.mongodb.org/mongo-driver v1.7.0
+	go.mongodb.org/mongo-driver v1.9.0
 )
 
 require (
