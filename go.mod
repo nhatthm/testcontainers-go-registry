@@ -6,7 +6,7 @@ require (
 	github.com/docker/docker v20.10.14+incompatible
 	github.com/docker/go-units v0.4.0
 	github.com/go-sql-driver/mysql v1.6.0
-	github.com/golang-migrate/migrate/v4 v4.15.1
+	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/jackc/pgx/v4 v4.16.0
 	github.com/nhatthm/testcontainers-go-extra v0.2.0
 	github.com/stretchr/testify v1.7.1
