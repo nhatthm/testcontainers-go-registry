@@ -3,7 +3,7 @@ module github.com/nhatthm/testcontainers-go-registry
 go 1.17
 
 require (
-	github.com/docker/docker v20.10.15+incompatible
+	github.com/docker/docker v20.10.16+incompatible
 	github.com/docker/go-units v0.4.0
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-migrate/migrate/v4 v4.15.2
