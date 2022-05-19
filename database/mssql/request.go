@@ -27,7 +27,7 @@ func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerO
 		}
 
 		if code > 0 {
-			return fmt.Errorf("could not create database (code %d)", code)
+			return fmt.Errorf("could not create database (code %d)", code) // nolint: goerr113
 		}
 
 		return nil
