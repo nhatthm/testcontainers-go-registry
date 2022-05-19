@@ -48,5 +48,5 @@ jobs:
         if: matrix.go-version == env.GO_LATEST_VERSION
         uses: codecov/codecov-action@v3
         with:
-          files: ./unit.coverprofile
-          flags: unittests-${{ runner.os }}
+          files: ./features.coverprofile
+          flags: featurestests-${{ runner.os }}

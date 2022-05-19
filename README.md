@@ -97,6 +97,32 @@ func startPostgres() (testcontainers.Container, error) {
 }
 ```
 
+## SQL Server
+
+```go
+package example
+
+import (
+	"context"
+
+	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	"github.com/nhatthm/testcontainers-go-registry/database/mssql"
+)
+
+const (
+	dbName          = "test"
+	dbPassword      = "My!StrongPassword"
+	migrationSource = "file://./resources/migrations/"
+)
+
+func startSQLServer() (testcontainers.Container, error) {
+	return mssql.StartGenericContainer(context.Background(),
+		dbName, dbPassword,
+		mssql.RunMigrations(migrationSource),
+	)
+}
+```
+
 ## Options
 
 ### Change Image Tag
@@ -117,7 +143,7 @@ const (
 	dbPassword = "test"
 )
 
-func startMySQL() (testcontainers.Container, error) {
+func startPostgres() (testcontainers.Container, error) {
 	return postgres.StartGenericContainer(context.Background(),
 		dbName, dbUser, dbPassword,
 		testcontainers.WithImageTag("13-alpine"),

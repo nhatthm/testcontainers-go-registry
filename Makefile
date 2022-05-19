@@ -13,9 +13,9 @@ $(VENDOR_DIR):
 lint:
 	@$(GOLANGCI_LINT) run
 
-test: test-unit
+test: test-integration
 
-## Run unit tests
-test-unit:
-	@echo ">> unit test"
-	@$(GO) test -gcflags=-l -coverprofile=unit.coverprofile -covermode=atomic -race ./...
+## Run integration tests
+test-integration:
+	@echo ">> integration test"
+	@$(GO) test -v -gcflags=-l -coverprofile=features.coverprofile -covermode=atomic -race ./...
