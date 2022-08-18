@@ -6,11 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/nhatthm/testcontainers-go-registry/database/mssql"
+	"go.nhat.io/testcontainers-go-registry/database/mssql"
 )
 
 func TestRunMigrations(t *testing.T) {

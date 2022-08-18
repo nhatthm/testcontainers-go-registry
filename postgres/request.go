@@ -5,10 +5,8 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/postgres" // Database driver
-	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/nhatthm/testcontainers-go-extra/wait"
-
-	db "github.com/nhatthm/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-go-registry/database"
 )
 
 // Request creates a new request for starting a postgres server.
