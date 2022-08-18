@@ -7,15 +7,15 @@ import (
 
 	_ "github.com/golang-migrate/migrate/v4/database/sqlserver" // Database driver
 	"github.com/testcontainers/testcontainers-go/wait"
-	"go.nhat.io/testcontainers-go-extra"
-	extrawait "go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	extrawait "go.nhat.io/testcontainers-extra/wait"
 
-	db "go.nhat.io/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-registry/database"
 )
 
 // Request creates a new request for starting a mssql server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mssql.Request instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mssql.Request instead.
 func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerOption) testcontainers.StartGenericContainerRequest {
 	finalOpts := make([]testcontainers.GenericContainerOption, 2, len(opts)+2)
 
@@ -65,14 +65,14 @@ func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerO
 
 // RunMigrations is option to run migrations.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mssql.RunMigrations instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mssql.RunMigrations instead.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
 	return db.RunMigrations(migrationSource, DSN(`$MSSQL_DB`, `$SA_PASSWORD`))
 }
 
 // DSN returns the database dsn for connecting to server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mssql.DSN instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mssql.DSN instead.
 func DSN(dbName, dbPassword string) string {
 	return fmt.Sprintf("sqlserver://sa:%s@$MSSQL_1433_HOST:$MSSQL_1433_PORT?database=%s", dbPassword, dbName)
 }

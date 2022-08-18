@@ -3,12 +3,12 @@ package mongo
 import (
 	"context"
 
-	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-extra"
 )
 
 // StartGenericContainer starts a new mysql container.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.StartGenericContainer instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mongo.StartGenericContainer instead.
 func StartGenericContainer(ctx context.Context, opts ...testcontainers.GenericContainerOption) (testcontainers.Container, error) {
 	r := Request(opts...)
 

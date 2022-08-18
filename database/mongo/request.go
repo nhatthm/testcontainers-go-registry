@@ -5,15 +5,15 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/mongodb" // Database driver
-	"go.nhat.io/testcontainers-go-extra"
-	"go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	"go.nhat.io/testcontainers-extra/wait"
 
-	db "go.nhat.io/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-registry/database"
 )
 
 // Request creates a new request for starting a mongo server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.Request instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mongo.Request instead.
 func Request(opts ...testcontainers.GenericContainerOption) testcontainers.StartGenericContainerRequest {
 	finalOpts := make([]testcontainers.GenericContainerOption, 1, len(opts)+1)
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
@@ -36,14 +36,14 @@ func Request(opts ...testcontainers.GenericContainerOption) testcontainers.Start
 
 // RunMigrations is option to run migrations.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.RunMigrations instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mongo.RunMigrations instead.
 func RunMigrations(migrationSource, dbName string) testcontainers.ContainerCallback {
 	return db.RunMigrations(migrationSource, DSN(dbName))
 }
 
 // DSN returns the database dsn for connecting to server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.DSN instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mongo.DSN instead.
 func DSN(dbName string) string {
 	return fmt.Sprintf("mongodb://$MONGO_27017_HOST:$MONGO_27017_PORT/%s", dbName)
 }

@@ -1,11 +1,11 @@
-module go.nhat.io/testcontainers-go-registry
+module go.nhat.io/testcontainers-registry
 
 go 1.18
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/testcontainers/testcontainers-go v0.13.0
-	go.nhat.io/testcontainers-go-extra v0.4.0
+	go.nhat.io/testcontainers-extra v0.5.0
 )
 
 require (
