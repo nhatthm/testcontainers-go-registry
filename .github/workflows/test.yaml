@@ -48,5 +48,5 @@ jobs:
         if: matrix.go-version == env.GO_LATEST_VERSION
         uses: codecov/codecov-action@v3
         with:
-          files: ./features.coverprofile,mongo/features.coverprofile,mssql/features.coverprofile,mysql/features.coverprofile,postgres/features.coverprofile
+          files: ./features.coverprofile,elasticsearch/features.coverprofile,mongo/features.coverprofile,mssql/features.coverprofile,mysql/features.coverprofile,postgres/features.coverprofile
           flags: featurestests-${{ runner.os }}
