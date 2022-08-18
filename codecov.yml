@@ -1,3 +1,6 @@
 ignore:
     - "features/**/*"
-    - "sql/sql.go"
+    - "database/mongo/*"
+    - "database/mssql/*"
+    - "database/mysql/*"
+    - "database/postgres/*"

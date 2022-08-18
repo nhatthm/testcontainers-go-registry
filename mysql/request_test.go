@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.nhat.io/testcontainers-go-registry/database/mysql"
+	"go.nhat.io/testcontainers-go-registry/mysql"
 )
 
 func TestRunMigrations(t *testing.T) {
