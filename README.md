@@ -11,12 +11,12 @@ Common Image Registry for Testcontainers-Go
 
 ## Prerequisites
 
-- `Go >= 1.16`
+- `Go >= 1.17`
 
 ## Install
 
 ```bash
-go get github.com/nhatthm/testcontainers-go-registry
+go get go.nhat.io/testcontainers-go-registry
 ```
 
 ## Mongo
@@ -27,7 +27,7 @@ package example
 import (
 	"context"
 
-	"github.com/nhatthm/testcontainers-go-registry/database/mongo"
+	"go.nhat.io/testcontainers-go-registry/mongo"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -51,7 +51,7 @@ package example
 import (
 	"context"
 
-	"github.com/nhatthm/testcontainers-go-registry/database/mysql"
+	"go.nhat.io/testcontainers-go-registry/mysql"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -78,7 +78,7 @@ package example
 import (
 	"context"
 
-	"github.com/nhatthm/testcontainers-go-registry/database/postgres"
+	"go.nhat.io/testcontainers-go-registry/postgres"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -106,7 +106,7 @@ import (
 	"context"
 
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
-	"github.com/nhatthm/testcontainers-go-registry/database/mssql"
+	"go.nhat.io/testcontainers-go-registry/mssql"
 )
 
 const (
@@ -133,7 +133,7 @@ package example
 import (
 	"context"
 
-	"github.com/nhatthm/testcontainers-go-registry/database/postgres"
+	"go.nhat.io/testcontainers-go-registry/postgres"
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
 )
 
@@ -160,7 +160,7 @@ import (
 	"context"
 
 	testcontainers "github.com/nhatthm/testcontainers-go-extra"
-	"github.com/nhatthm/testcontainers-go-registry/database/mysql"
+	"go.nhat.io/testcontainers-go-registry/mysql"
 )
 
 const (

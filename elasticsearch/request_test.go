@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	es "github.com/nhatthm/testcontainers-go-registry/elasticsearch"
+	es "go.nhat.io/testcontainers-go-registry/elasticsearch"
 )
 
 func TestRunMigrations(t *testing.T) {
