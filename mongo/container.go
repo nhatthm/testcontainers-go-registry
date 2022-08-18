@@ -7,8 +7,6 @@ import (
 )
 
 // StartGenericContainer starts a new mysql container.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.StartGenericContainer instead.
 func StartGenericContainer(ctx context.Context, opts ...testcontainers.GenericContainerOption) (testcontainers.Container, error) {
 	r := Request(opts...)
 

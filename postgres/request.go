@@ -12,8 +12,6 @@ import (
 )
 
 // Request creates a new request for starting a postgres server.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/postgres.Request instead.
 func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericContainerOption) testcontainers.StartGenericContainerRequest {
 	finalOpts := make([]testcontainers.GenericContainerOption, 1, len(opts)+1)
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
@@ -41,15 +39,11 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 }
 
 // RunMigrations is option to run migrations.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/postgres.RunMigrations instead.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
 	return db.RunMigrations(migrationSource, DSN(`$POSTGRES_DB`, `$POSTGRES_USER`, `$POSTGRES_PASSWORD`))
 }
 
 // DSN returns the database dsn for connecting to server.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/postgres.DSN instead.
 func DSN(dbName, dbUser, dbPassword string) string {
 	return fmt.Sprintf("postgres://%s:%s@$POSTGRES_5432_HOST:$POSTGRES_5432_PORT/%s?sslmode=disable&client_encoding=UTF8", dbUser, dbPassword, dbName)
 }

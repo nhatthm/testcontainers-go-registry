@@ -1,0 +1,14 @@
+[
+    {
+        "insert": "customer",
+        "documents": [
+            {
+                "_id": "1",
+                "country": "US",
+                "first_name": "John",
+                "last_name": "Doe",
+                "email": "john.doe@example.com"
+            }
+        ]
+    }
+]

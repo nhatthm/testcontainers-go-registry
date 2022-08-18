@@ -7,8 +7,6 @@ import (
 )
 
 // StartGenericContainer starts a new mssql container.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mssql.StartGenericContainer instead.
 func StartGenericContainer(ctx context.Context, dbName, dbPassword string, opts ...testcontainers.GenericContainerOption) (testcontainers.Container, error) {
 	r := Request(dbName, dbPassword, opts...)
 
