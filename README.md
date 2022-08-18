@@ -3,8 +3,8 @@
 [![GitHub Releases](https://img.shields.io/github/v/release/nhatthm/testcontainers-go-registry)](https://github.com/nhatthm/testcontainers-go-registry/releases/latest)
 [![Build Status](https://github.com/nhatthm/testcontainers-go-registry/actions/workflows/test.yaml/badge.svg)](https://github.com/nhatthm/testcontainers-go-registry/actions/workflows/test.yaml)
 [![codecov](https://codecov.io/gh/nhatthm/testcontainers-go-registry/branch/master/graph/badge.svg?token=eTdAgDE2vR)](https://codecov.io/gh/nhatthm/testcontainers-go-registry)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nhatthm/testcontainers-go-registry)](https://goreportcard.com/report/github.com/nhatthm/testcontainers-go-registry)
-[![GoDevDoc](https://img.shields.io/badge/dev-doc-00ADD8?logo=go)](https://pkg.go.dev/github.com/nhatthm/testcontainers-go-registry)
+[![Go Report Card](https://goreportcard.com/badge/go.nhat.io/testcontainers-registry)](https://goreportcard.com/report/go.nhat.io/testcontainers-registry)
+[![GoDevDoc](https://img.shields.io/badge/dev-doc-00ADD8?logo=go)](https://pkg.go.dev/go.nhat.io/testcontainers-registry)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=PJZSGJN57TDJY)
 
 Common Image Registry for Testcontainers-Go
@@ -16,7 +16,7 @@ Common Image Registry for Testcontainers-Go
 ## Install
 
 ```bash
-go get go.nhat.io/testcontainers-go-registry
+go get go.nhat.io/testcontainers-registry
 ```
 
 ## Mongo
@@ -28,7 +28,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/mongo"
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
 const (
@@ -52,7 +52,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/mysql"
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
 const (
@@ -79,7 +79,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/postgres"
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
 const (
@@ -105,7 +105,7 @@ package example
 import (
 	"context"
 
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 	"go.nhat.io/testcontainers-go-registry/mssql"
 )
 
@@ -134,7 +134,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/postgres"
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
 const (
@@ -159,7 +159,7 @@ package example
 import (
 	"context"
 
-	testcontainers "go.nhat.io/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-extra"
 	"go.nhat.io/testcontainers-go-registry/mysql"
 )
 

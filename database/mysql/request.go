@@ -6,15 +6,15 @@ import (
 
 	_ "github.com/golang-migrate/migrate/v4/database/mysql" // Database driver
 	"github.com/testcontainers/testcontainers-go/wait"
-	"go.nhat.io/testcontainers-go-extra"
-	extrawait "go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	extrawait "go.nhat.io/testcontainers-extra/wait"
 
-	db "go.nhat.io/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-registry/database"
 )
 
 // Request creates a new request for starting a mysql server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mysql.Request instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mysql.Request instead.
 func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericContainerOption) testcontainers.StartGenericContainerRequest {
 	finalOpts := make([]testcontainers.GenericContainerOption, 1, len(opts)+1)
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
@@ -48,14 +48,14 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 
 // RunMigrations is option to run migrations.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mysql.RunMigrations instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mysql.RunMigrations instead.
 func RunMigrations(migrationSource string) testcontainers.ContainerCallback {
 	return db.RunMigrations(migrationSource, fmt.Sprintf("mysql://%s", DSN(`$MYSQL_DATABASE`, `$MYSQL_USER`, `$MYSQL_PASSWORD`)))
 }
 
 // DSN returns the database dsn for connecting to server.
 //
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mysql.DSN instead.
+// Deprecated: Use go.nhat.io/testcontainers-registry/mysql.DSN instead.
 func DSN(dbName, dbUser, dbPassword string) string {
 	return fmt.Sprintf("%s:%s@tcp($MYSQL_3306_HOST:$MYSQL_3306_PORT)/%s?charset=utf8&parseTime=true", dbUser, dbPassword, dbName)
 }
