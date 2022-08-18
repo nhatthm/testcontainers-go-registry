@@ -515,8 +515,6 @@ github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822/go.mod h1:+n7T8m
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
 github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f/go.mod h1:ZdcZmHo+o7JKHSa8/e818NopupXU1YMK5fe1lsApnBw=
 github.com/ncw/swift v1.0.47/go.mod h1:23YIA4yWVnGwv2dQlN4bB7egfYX6YLn0Yo/S6zZO/ZM=
-github.com/nhatthm/testcontainers-go-extra v0.3.0 h1:mYimYCKExgcYcZdlX6mscBL/riRHT0sDTYNz5kZiSaE=
-github.com/nhatthm/testcontainers-go-extra v0.3.0/go.mod h1:V26mpCEX/Kv6n9DCOIvX1JwJkZlLvfV21ZE4QjhqR4M=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
 github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI8A=
 github.com/oklog/ulid v1.3.1/go.mod h1:CirwcVhetQ6Lv90oh/F+FBtV6XMibvdAFo93nm5qn4U=
@@ -701,8 +699,6 @@ go.etcd.io/etcd v0.5.0-alpha.5.0.20200910180754-dd1b699fc489/go.mod h1:yVHk9ub3C
 go.mozilla.org/pkcs7 v0.0.0-20200128120323-432b2356ecb1/go.mod h1:SNgMg+EgDFwmvSmLRTNKC5fegJjB7v23qTQ0XLGUNHk=
 go.nhat.io/testcontainers-go-extra v0.4.0 h1:LJIkviVSO6mP82zqREhFMRuoUODqNvzT66X+GU8uNiY=
 go.nhat.io/testcontainers-go-extra v0.4.0/go.mod h1:vJn/acYygoFnmR+r0eWdHSsOHIs38ItiKAwVQVi2OB0=
-go.nhat.io/testcontainers-go-registry v0.5.0 h1:wySnWvvE4W5UohGc6Wr10LXQ/w2H06RLRAZhK/nMk8Y=
-go.nhat.io/testcontainers-go-registry v0.5.0/go.mod h1:RI/XE6ZYRNNjqLvv0qaRRRvHs4Nk/ecbadqlEPbrd9U=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=
 go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=

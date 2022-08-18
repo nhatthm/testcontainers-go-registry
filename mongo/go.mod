@@ -7,7 +7,7 @@ require (
 	github.com/stretchr/testify v1.8.0
 	go.mongodb.org/mongo-driver v1.10.1
 	go.nhat.io/testcontainers-go-extra v0.4.0
-	go.nhat.io/testcontainers-go-registry v0.5.0
+	go.nhat.io/testcontainers-go-registry v0.6.0
 )
 
 require (
@@ -36,7 +36,6 @@ require (
 	github.com/moby/term v0.0.0-20220808134915-39b0c02b01ae // indirect
 	github.com/montanaflynn/stats v0.6.6 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
-	github.com/nhatthm/testcontainers-go-extra v0.3.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.3-0.20211202183452-c5a74bcca799 // indirect
 	github.com/opencontainers/runc v1.1.3 // indirect

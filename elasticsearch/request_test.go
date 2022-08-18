@@ -8,7 +8,6 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/go-sql-driver/mysql" // Database driver
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.nhat.io/testcontainers-go-extra"

@@ -6,9 +6,9 @@ import (
 	"os"
 	"testing"
 
-	"go.nhat.io/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"go.nhat.io/testcontainers-go-extra"
 
 	"go.nhat.io/testcontainers-go-registry/mssql"
 )

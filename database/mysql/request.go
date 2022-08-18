@@ -5,9 +5,9 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/mysql" // Database driver
+	"github.com/testcontainers/testcontainers-go/wait"
 	"go.nhat.io/testcontainers-go-extra"
 	extrawait "go.nhat.io/testcontainers-go-extra/wait"
-	"github.com/testcontainers/testcontainers-go/wait"
 
 	db "go.nhat.io/testcontainers-go-registry/database"
 )
