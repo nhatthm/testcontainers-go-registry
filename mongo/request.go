@@ -5,10 +5,10 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/mongodb" // Database driver
-	"go.nhat.io/testcontainers-go-extra"
-	"go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	"go.nhat.io/testcontainers-extra/wait"
 
-	db "go.nhat.io/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-registry/database"
 )
 
 // Request creates a new request for starting a mongo server.

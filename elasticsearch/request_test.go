@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-extra"
 
-	es "go.nhat.io/testcontainers-go-registry/elasticsearch"
+	es "go.nhat.io/testcontainers-registry/elasticsearch"
 )
 
 func TestRunMigrations(t *testing.T) {

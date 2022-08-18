@@ -19,6 +19,28 @@ Common Image Registry for Testcontainers-Go
 go get go.nhat.io/testcontainers-registry
 ```
 
+## Elasticsearch
+
+```go
+package example
+
+import (
+	"context"
+
+	es "go.nhat.io/testcontainers-registry/elasticsearch"
+	testcontainers "go.nhat.io/testcontainers-extra"
+)
+
+const (
+	dbName          = "test"
+	migrationSource = "file://./resources/migrations/"
+)
+
+func startElasticsearch() (testcontainers.Container, error) {
+	return es.StartGenericContainer(context.Background())
+}
+```
+
 ## Mongo
 
 ```go
@@ -27,7 +49,7 @@ package example
 import (
 	"context"
 
-	"go.nhat.io/testcontainers-go-registry/mongo"
+	"go.nhat.io/testcontainers-registry/mongo"
 	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
@@ -51,7 +73,7 @@ package example
 import (
 	"context"
 
-	"go.nhat.io/testcontainers-go-registry/mysql"
+	"go.nhat.io/testcontainers-registry/mysql"
 	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
@@ -78,7 +100,7 @@ package example
 import (
 	"context"
 
-	"go.nhat.io/testcontainers-go-registry/postgres"
+	"go.nhat.io/testcontainers-registry/postgres"
 	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
@@ -106,7 +128,7 @@ import (
 	"context"
 
 	testcontainers "go.nhat.io/testcontainers-extra"
-	"go.nhat.io/testcontainers-go-registry/mssql"
+	"go.nhat.io/testcontainers-registry/mssql"
 )
 
 const (
@@ -133,7 +155,7 @@ package example
 import (
 	"context"
 
-	"go.nhat.io/testcontainers-go-registry/postgres"
+	"go.nhat.io/testcontainers-registry/postgres"
 	testcontainers "go.nhat.io/testcontainers-extra"
 )
 
@@ -160,7 +182,7 @@ import (
 	"context"
 
 	testcontainers "go.nhat.io/testcontainers-extra"
-	"go.nhat.io/testcontainers-go-registry/mysql"
+	"go.nhat.io/testcontainers-registry/mysql"
 )
 
 const (
