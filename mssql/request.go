@@ -6,6 +6,7 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/sqlserver" // Database driver
+	"github.com/nhatthm/testcontainers-go-extra"
 	extrawait "github.com/nhatthm/testcontainers-go-extra/wait"
 	"github.com/testcontainers/testcontainers-go/wait"
 

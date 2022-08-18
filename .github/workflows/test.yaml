@@ -44,9 +44,9 @@ jobs:
         run: |
           make test
 
-      - name: Upload code coverage (unit)
+      - name: Upload code coverage (integration)
         if: matrix.go-version == env.GO_LATEST_VERSION
         uses: codecov/codecov-action@v3
         with:
-          files: ./features.coverprofile
+          files: ./features.coverprofile,mongo/features.coverprofile,mssql/features.coverprofile,mysql/features.coverprofile,postgres/features.coverprofile
           flags: featurestests-${{ runner.os }}

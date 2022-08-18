@@ -7,7 +7,6 @@ require (
 	github.com/jackc/pgx/v4 v4.17.0
 	github.com/nhatthm/testcontainers-go-extra v0.3.0
 	github.com/stretchr/testify v1.8.0
-	github.com/testcontainers/testcontainers-go v0.13.0
 	go.nhat.io/testcontainers-go-registry v0.5.0
 )
 
@@ -48,6 +47,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/testcontainers/testcontainers-go v0.13.0 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	golang.org/x/crypto v0.0.0-20220817201139-bc19a97f63c8 // indirect

@@ -5,6 +5,7 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/mongodb" // Database driver
+	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/nhatthm/testcontainers-go-extra/wait"
 
 	db "go.nhat.io/testcontainers-go-registry/database"
