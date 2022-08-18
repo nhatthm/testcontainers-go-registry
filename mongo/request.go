@@ -12,8 +12,6 @@ import (
 )
 
 // Request creates a new request for starting a mongo server.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.Request instead.
 func Request(opts ...testcontainers.GenericContainerOption) testcontainers.StartGenericContainerRequest {
 	finalOpts := make([]testcontainers.GenericContainerOption, 1, len(opts)+1)
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
@@ -35,15 +33,11 @@ func Request(opts ...testcontainers.GenericContainerOption) testcontainers.Start
 }
 
 // RunMigrations is option to run migrations.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.RunMigrations instead.
 func RunMigrations(migrationSource, dbName string) testcontainers.ContainerCallback {
 	return db.RunMigrations(migrationSource, DSN(dbName))
 }
 
 // DSN returns the database dsn for connecting to server.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mongo.DSN instead.
 func DSN(dbName string) string {
 	return fmt.Sprintf("mongodb://$MONGO_27017_HOST:$MONGO_27017_PORT/%s", dbName)
 }

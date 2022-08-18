@@ -1,4 +1,4 @@
-package mysql
+package postgres
 
 import (
 	"context"
@@ -7,8 +7,6 @@ import (
 )
 
 // StartGenericContainer starts a new mysql container.
-//
-// Deprecated: Use go.nhat.io/testcontainers-go-registry/mysql.StartGenericContainer instead.
 func StartGenericContainer(ctx context.Context, dbName, dbUser, dbPassword string, opts ...testcontainers.GenericContainerOption) (testcontainers.Container, error) {
 	r := Request(dbName, dbUser, dbPassword, opts...)
 
