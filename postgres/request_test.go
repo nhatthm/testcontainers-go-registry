@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	_ "github.com/jackc/pgx/v4/stdlib" // Database driver
-	"github.com/nhatthm/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 

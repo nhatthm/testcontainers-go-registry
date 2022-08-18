@@ -8,7 +8,7 @@ import (
 
 	"github.com/golang-migrate/migrate/v4"
 	_ "github.com/golang-migrate/migrate/v4/source/file" // Default migration source.
-	"github.com/nhatthm/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-go-extra"
 )
 
 // RunMigrations runs database migration when container is ready.

@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	_ "github.com/go-sql-driver/mysql" // Database driver
-	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"go.nhat.io/testcontainers-go-extra"
 
 	es "go.nhat.io/testcontainers-go-registry/elasticsearch"
 )

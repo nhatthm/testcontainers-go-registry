@@ -5,8 +5,8 @@ import (
 	"time"
 
 	_ "github.com/golang-migrate/migrate/v4/database/postgres" // Database driver
-	"github.com/nhatthm/testcontainers-go-extra"
-	"github.com/nhatthm/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-go-extra/wait"
 	db "go.nhat.io/testcontainers-go-registry/database"
 )
 

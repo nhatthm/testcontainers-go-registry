@@ -28,7 +28,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/mongo"
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 )
 
 const (
@@ -52,7 +52,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/mysql"
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 )
 
 const (
@@ -79,7 +79,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/postgres"
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 )
 
 const (
@@ -105,7 +105,7 @@ package example
 import (
 	"context"
 
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 	"go.nhat.io/testcontainers-go-registry/mssql"
 )
 
@@ -134,7 +134,7 @@ import (
 	"context"
 
 	"go.nhat.io/testcontainers-go-registry/postgres"
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 )
 
 const (
@@ -159,7 +159,7 @@ package example
 import (
 	"context"
 
-	testcontainers "github.com/nhatthm/testcontainers-go-extra"
+	testcontainers "go.nhat.io/testcontainers-go-extra"
 	"go.nhat.io/testcontainers-go-registry/mysql"
 )
 

@@ -4,8 +4,8 @@ go 1.18
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
-	github.com/nhatthm/testcontainers-go-extra v0.3.0
 	github.com/testcontainers/testcontainers-go v0.13.0
+	go.nhat.io/testcontainers-go-extra v0.4.0
 )
 
 require (
@@ -49,7 +49,6 @@ require (
 	github.com/opencontainers/runc v1.1.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
-	github.com/stretchr/testify v1.8.0 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.1 // indirect
 	github.com/xdg-go/stringprep v1.0.3 // indirect

@@ -3,7 +3,7 @@ package mongo
 import (
 	"context"
 
-	"github.com/nhatthm/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-go-extra"
 )
 
 // StartGenericContainer starts a new mysql container.
