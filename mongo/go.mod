@@ -5,9 +5,9 @@ go 1.18
 require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/nhatthm/testcontainers-go-extra v0.3.0
-	github.com/nhatthm/testcontainers-go-registry v0.4.1
 	github.com/stretchr/testify v1.8.0
 	go.mongodb.org/mongo-driver v1.10.1
+	go.nhat.io/testcontainers-go-registry v0.5.0
 )
 
 require (

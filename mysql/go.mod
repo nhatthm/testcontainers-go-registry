@@ -6,9 +6,9 @@ require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/nhatthm/testcontainers-go-extra v0.3.0
-	github.com/nhatthm/testcontainers-go-registry v0.4.1
 	github.com/stretchr/testify v1.8.0
 	github.com/testcontainers/testcontainers-go v0.13.0
+	go.nhat.io/testcontainers-go-registry v0.5.0
 )
 
 require (

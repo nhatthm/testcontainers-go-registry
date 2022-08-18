@@ -7,14 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 
-	mongodb "github.com/nhatthm/testcontainers-go-registry/database/mongo"
+	mongodb "go.nhat.io/testcontainers-go-registry/database/mongo"
 )
 
 func TestRunMigrations(t *testing.T) {

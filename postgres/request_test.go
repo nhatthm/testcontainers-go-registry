@@ -7,11 +7,10 @@ import (
 	"testing"
 
 	_ "github.com/jackc/pgx/v4/stdlib" // Database driver
-	"github.com/nhatthm/testcontainers-go-extra"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	pg "github.com/nhatthm/testcontainers-go-registry/database/postgres"
+	pg "go.nhat.io/testcontainers-go-registry/database/postgres"
 )
 
 func TestRunMigrations(t *testing.T) {
