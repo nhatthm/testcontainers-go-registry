@@ -1,4 +1,4 @@
-module go.nhat.io/testcontainers-go-registry/postgres
+module go.nhat.io/testcontainers-registry/postgres
 
 go 1.18
 
@@ -6,8 +6,8 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/jackc/pgx/v4 v4.17.0
 	github.com/stretchr/testify v1.8.0
-	go.nhat.io/testcontainers-go-extra v0.4.0
-	go.nhat.io/testcontainers-go-registry v0.6.0
+	go.nhat.io/testcontainers-extra v0.5.0
+	go.nhat.io/testcontainers-registry v0.7.0
 )
 
 require (

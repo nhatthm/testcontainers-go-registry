@@ -1,4 +1,4 @@
-module go.nhat.io/testcontainers-go-registry/elasticsearch
+module go.nhat.io/testcontainers-registry/elasticsearch
 
 go 1.18
 
@@ -6,7 +6,7 @@ require (
 	github.com/docker/docker v20.10.17+incompatible
 	github.com/docker/go-units v0.4.0
 	github.com/stretchr/testify v1.8.0
-	go.nhat.io/testcontainers-go-extra v0.4.0
+	go.nhat.io/testcontainers-extra v0.5.0
 )
 
 require (

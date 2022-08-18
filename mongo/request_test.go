@@ -12,9 +12,9 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-extra"
 
-	mongodb "go.nhat.io/testcontainers-go-registry/mongo"
+	mongodb "go.nhat.io/testcontainers-registry/mongo"
 )
 
 func TestRunMigrations(t *testing.T) {

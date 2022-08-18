@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-extra"
 
-	"go.nhat.io/testcontainers-go-registry/mssql"
+	"go.nhat.io/testcontainers-registry/mssql"
 )
 
 func TestRunMigrations(t *testing.T) {

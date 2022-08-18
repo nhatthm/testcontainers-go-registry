@@ -9,9 +9,9 @@ import (
 	_ "github.com/go-sql-driver/mysql" // Database driver
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.nhat.io/testcontainers-go-extra"
+	"go.nhat.io/testcontainers-extra"
 
-	"go.nhat.io/testcontainers-go-registry/mysql"
+	"go.nhat.io/testcontainers-registry/mysql"
 )
 
 func TestRunMigrations(t *testing.T) {

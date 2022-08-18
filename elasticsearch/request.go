@@ -5,8 +5,8 @@ import (
 
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/go-units"
-	"go.nhat.io/testcontainers-go-extra"
-	extrawait "go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	extrawait "go.nhat.io/testcontainers-extra/wait"
 )
 
 // Request creates a new request for starting an elasticsearch server.

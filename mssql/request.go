@@ -7,10 +7,10 @@ import (
 
 	_ "github.com/golang-migrate/migrate/v4/database/sqlserver" // Database driver
 	"github.com/testcontainers/testcontainers-go/wait"
-	"go.nhat.io/testcontainers-go-extra"
-	extrawait "go.nhat.io/testcontainers-go-extra/wait"
+	"go.nhat.io/testcontainers-extra"
+	extrawait "go.nhat.io/testcontainers-extra/wait"
 
-	db "go.nhat.io/testcontainers-go-registry/database"
+	db "go.nhat.io/testcontainers-registry/database"
 )
 
 // Request creates a new request for starting a mssql server.
