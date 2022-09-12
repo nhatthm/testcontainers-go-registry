@@ -19,7 +19,7 @@ func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerO
 
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
 	finalOpts[1] = testcontainers.WithCallback(func(ctx context.Context, c testcontainers.Container, _ testcontainers.ContainerRequest) error {
-		code, err := c.Exec(ctx, []string{
+		code, _, err := c.Exec(ctx, []string{
 			"/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", dbPassword, "-Q", `USE [master]; CREATE DATABASE ` + dbName + `;`,
 		})
 		if err != nil {
