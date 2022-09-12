@@ -7,7 +7,7 @@ require (
 	github.com/jackc/pgx/v4 v4.17.2
 	github.com/stretchr/testify v1.8.0
 	go.nhat.io/testcontainers-extra v0.6.0
-	go.nhat.io/testcontainers-registry v0.7.0
+	go.nhat.io/testcontainers-registry v0.8.0
 )
 
 require (
@@ -50,7 +50,7 @@ require (
 	github.com/testcontainers/testcontainers-go v0.14.0 // indirect
 	go.opencensus.io v0.23.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
-	golang.org/x/crypto v0.0.0-20220817201139-bc19a97f63c8 // indirect
+	golang.org/x/crypto v0.0.0-20220829220503-c86fa9a7ed90 // indirect
 	golang.org/x/net v0.0.0-20220909164309-bea034e7d591 // indirect
 	golang.org/x/sys v0.0.0-20220909162455-aba9fc2a8ff2 // indirect
 	golang.org/x/text v0.3.7 // indirect
