@@ -2,13 +2,14 @@ MODULE_NAME=testcontainers-registry
 
 VENDOR_DIR = vendor
 
-GOLANGCI_LINT_VERSION ?= v1.49.0
+GOLANGCI_LINT_VERSION ?= v1.50.0
 
 GO ?= go
 GOLANGCI_LINT ?= $(shell go env GOPATH)/bin/golangci-lint-$(GOLANGCI_LINT_VERSION)
 
 goModules := $(shell find . -name 'go.mod' | xargs dirname | tail -n +2)
 lintGoModules := $(subst -.,-module,$(subst /,-,$(addprefix lint-,$(goModules))))
+updateGoModules := $(subst -.,-module,$(subst /,-,$(addprefix update-,$(goModules))))
 tidyGoModules := $(subst -.,-module,$(subst /,-,$(addprefix tidy-,$(goModules))))
 testGoModules := $(subst -.,-integration,$(subst /,-,$(addprefix test-,$(goModules))))
 
@@ -28,6 +29,16 @@ $(lintGoModules): $(GOLANGCI_LINT)
 
 	@echo ">> module: $(GO_MODULE)"
 	@cd "$(GO_MODULE)"; $(GOLANGCI_LINT) run
+
+.PHONY: $(updateGoModules)
+$(updateGoModules):
+	$(eval GO_MODULE := "$(subst update/module,.,$(subst -,/,$(subst update-module-,,$@)))")
+
+	@echo ">> module: $(GO_MODULE)"
+	@cd "$(GO_MODULE)"; $(GO) get -u ./...
+
+.PHONY: update
+update: $(updateGoModules)
 
 .PHONY: tidy
 tidy: $(tidyGoModules)
