@@ -5,8 +5,8 @@ go 1.18
 require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang-migrate/migrate/v4 v4.15.2
-	github.com/stretchr/testify v1.8.0
-	github.com/testcontainers/testcontainers-go v0.14.0
+	github.com/stretchr/testify v1.8.1
+	github.com/testcontainers/testcontainers-go v0.15.0
 	go.nhat.io/testcontainers-extra v0.6.0
 	go.nhat.io/testcontainers-registry v0.8.0
 )
