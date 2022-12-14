@@ -38,7 +38,7 @@ func Request(dbName, dbUser, dbPassword string, opts ...testcontainers.GenericCo
 					WithStartPeriod(5*time.Minute).
 					WithTestTimeout(5*time.Second).
 					WithTestInterval(10*time.Second),
-			).WithStartupTimeout(10 * time.Minute),
+			).WithDeadline(10 * time.Minute),
 		},
 		Options: finalOpts,
 	}
