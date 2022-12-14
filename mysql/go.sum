@@ -1290,8 +1290,8 @@ go.mongodb.org/mongo-driver v1.7.0/go.mod h1:Q4oFMbo1+MSNqICAdYMlC/zSTrwCogR4R8N
 go.mozilla.org/pkcs7 v0.0.0-20200128120323-432b2356ecb1/go.mod h1:SNgMg+EgDFwmvSmLRTNKC5fegJjB7v23qTQ0XLGUNHk=
 go.nhat.io/testcontainers-extra v0.8.0 h1:9mG+5e9+9mHEE4l1mbhbJABYxXZPKk9Zdzj50vJKwnQ=
 go.nhat.io/testcontainers-extra v0.8.0/go.mod h1:/kPnuwL6tmWjzn8jaJJbII5as3bN8+joRKES283+oyo=
-go.nhat.io/testcontainers-registry v0.9.0 h1:hQwLjsHRUgUOlaaDWsVQjF0ATFZ4Wh6wJ4mfPm+gZUI=
-go.nhat.io/testcontainers-registry v0.9.0/go.mod h1:Gj4gUcAZNDiWfKZzsCqdzsGaIlnqdQwOHjuWAdFPX40=
+go.nhat.io/testcontainers-registry v0.10.0 h1:0myh8FBNokIuTRhzwbXaqD+oeCXW72v1idtQ9oyB7Ps=
+go.nhat.io/testcontainers-registry v0.10.0/go.mod h1:FhIF3f7wqVi0Qzww7ywyKWdtzQH4iBCFMFianHFCdWM=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=
 go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
