@@ -20,26 +20,32 @@ linters-settings:
 linters:
   enable-all: true
   disable:
+    - deadcode
     - exhaustivestruct
     - exhaustruct
     - forbidigo
     - forcetypeassert
     - gci
     - gochecknoglobals
+    - goerr113
     - golint
     - gomnd
-    - gomoddirectives
+    - gomoddirectives # Temporary disabled until the docker deps are fixed.
     - ifshort
     - interfacer
     - ireturn
     - lll
     - maligned
     - nolintlint # https://github.com/golangci/golangci-lint/issues/3063
+    - nonamedreturns
+    - nosnakecase
     - paralleltest
     - scopelint
+    - structcheck
     - testpackage
-    - wrapcheck
+    - varcheck
     - varnamelen
+    - wrapcheck
 
 issues:
   exclude-use-default: false
