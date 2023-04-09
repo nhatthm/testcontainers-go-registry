@@ -32,7 +32,7 @@ func TestRunMigrations(t *testing.T) {
 				return err
 			}
 
-			defer resp.Body.Close() // nolint: errcheck
+			defer resp.Body.Close() // nolint: errcheck,gosec
 
 			data, err := io.ReadAll(resp.Body)
 			if err != nil {
