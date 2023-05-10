@@ -1132,10 +1132,10 @@ go.mongodb.org/mongo-driver v1.7.0/go.mod h1:Q4oFMbo1+MSNqICAdYMlC/zSTrwCogR4R8N
 go.mongodb.org/mongo-driver v1.11.6 h1:XM7G6PjiGAO5betLF13BIa5TlLUUE3uJ/2Ox3Lz1K+o=
 go.mongodb.org/mongo-driver v1.11.6/go.mod h1:G9TgswdsWjX4tmDA5zfs2+6AEPpYJwqblyjsfuh8oXY=
 go.mozilla.org/pkcs7 v0.0.0-20200128120323-432b2356ecb1/go.mod h1:SNgMg+EgDFwmvSmLRTNKC5fegJjB7v23qTQ0XLGUNHk=
-go.nhat.io/testcontainers-extra v0.10.0 h1:q+31CR5qr3o9kIoa+/OS+K3eKlRk/gZKT+FXlR5WSi0=
-go.nhat.io/testcontainers-extra v0.10.0/go.mod h1:FuvyYRg1OTYbNM9fqfq6RwBEYS14/t0vPo8uDonasNs=
-go.nhat.io/testcontainers-registry v0.12.0 h1:HteE/bqtayK2Hj1yUtD7HnrAoY/AE3NRlsGDFYaVKUM=
-go.nhat.io/testcontainers-registry v0.12.0/go.mod h1:hyXHu+zaYJZGK9u3itEA172SroknZWMTuJOgSn5oLSc=
+go.nhat.io/testcontainers-extra v0.11.0 h1:G7OvKyC8tsloR2mJ/t/ZdgYwcf7WcJ2u72+Jgicau8c=
+go.nhat.io/testcontainers-extra v0.11.0/go.mod h1:YUKNSvEerBtzYSPnCdC+IJcJ9vDYd5Ww8Ge/Ikt/jCA=
+go.nhat.io/testcontainers-registry v0.13.0 h1:lrCgEwsCpWzroCyPPnTNAqnrnRlcIdBUB+pAzljZnpw=
+go.nhat.io/testcontainers-registry v0.13.0/go.mod h1:U4DdP3LAZ26cvwIEqzgGNV6PR3uSldR3jC0q3ViEUGI=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=
 go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
