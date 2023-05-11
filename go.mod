@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
-	go.nhat.io/testcontainers-extra v0.10.0
+	go.nhat.io/testcontainers-extra v0.11.0
 )
 
 require (
