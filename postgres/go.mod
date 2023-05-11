@@ -6,8 +6,8 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/jackc/pgx/v4 v4.18.1
 	github.com/stretchr/testify v1.8.2
-	go.nhat.io/testcontainers-extra v0.10.0
-	go.nhat.io/testcontainers-registry v0.12.0
+	go.nhat.io/testcontainers-extra v0.11.0
+	go.nhat.io/testcontainers-registry v0.13.0
 )
 
 require (

@@ -75,8 +75,8 @@ github.com/testcontainers/testcontainers-go v0.20.1 h1:mK15UPJ8c5P+NsQKmkqzs/jMd
 github.com/testcontainers/testcontainers-go v0.20.1/go.mod h1:zb+NOlCQBkZ7RQp4QI+YMIHyO2CQ/qsXzNF5eLJ24SY=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
-go.nhat.io/testcontainers-extra v0.10.0 h1:q+31CR5qr3o9kIoa+/OS+K3eKlRk/gZKT+FXlR5WSi0=
-go.nhat.io/testcontainers-extra v0.10.0/go.mod h1:FuvyYRg1OTYbNM9fqfq6RwBEYS14/t0vPo8uDonasNs=
+go.nhat.io/testcontainers-extra v0.11.0 h1:G7OvKyC8tsloR2mJ/t/ZdgYwcf7WcJ2u72+Jgicau8c=
+go.nhat.io/testcontainers-extra v0.11.0/go.mod h1:YUKNSvEerBtzYSPnCdC+IJcJ9vDYd5Ww8Ge/Ikt/jCA=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
 golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
