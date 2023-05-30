@@ -3,7 +3,7 @@ module go.nhat.io/testcontainers-registry/mongo
 go 1.18
 
 require (
-	github.com/golang-migrate/migrate/v4 v4.15.2
+	github.com/golang-migrate/migrate/v4 v4.16.0
 	github.com/stretchr/testify v1.8.3
 	go.mongodb.org/mongo-driver v1.11.6
 	go.nhat.io/testcontainers-extra v0.11.0
@@ -40,7 +40,7 @@ require (
 	github.com/opencontainers/runc v1.1.7 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/sirupsen/logrus v1.9.2 // indirect
 	github.com/testcontainers/testcontainers-go v0.20.1 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
