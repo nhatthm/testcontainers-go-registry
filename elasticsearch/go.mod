@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/docker/docker v24.0.2+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/stretchr/testify v1.8.3
+	github.com/stretchr/testify v1.8.4
 	go.nhat.io/testcontainers-extra v0.11.0
 )
 
