@@ -3,7 +3,7 @@ module go.nhat.io/testcontainers-registry
 go 1.19
 
 require (
-	github.com/golang-migrate/migrate/v4 v4.16.0
+	github.com/golang-migrate/migrate/v4 v4.16.1
 	go.nhat.io/testcontainers-extra v0.11.0
 )
 
