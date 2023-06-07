@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/golang-migrate/migrate/v4 v4.16.0
 	github.com/stretchr/testify v1.8.4
-	go.mongodb.org/mongo-driver v1.11.6
+	go.mongodb.org/mongo-driver v1.11.7
 	go.nhat.io/testcontainers-extra v0.11.0
 	go.nhat.io/testcontainers-registry v0.13.0
 )
