@@ -3,7 +3,7 @@ module go.nhat.io/testcontainers-registry/mssql
 go 1.18
 
 require (
-	github.com/golang-migrate/migrate/v4 v4.16.1
+	github.com/golang-migrate/migrate/v4 v4.16.2
 	github.com/stretchr/testify v1.8.4
 	github.com/testcontainers/testcontainers-go v0.20.1
 	go.nhat.io/testcontainers-extra v0.11.0
