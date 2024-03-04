@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/golang-migrate/migrate/v4 v4.17.0
 	github.com/jackc/pgx/v4 v4.18.1
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	go.nhat.io/testcontainers-extra v0.12.0
 	go.nhat.io/testcontainers-registry v0.14.0
 )
