@@ -133,8 +133,8 @@ github.com/yusufpapurcu/wmi v1.2.4 h1:zFUKzehAFReQwLys1b/iSMl+JQGSCSjtVqQn9bBrPo
 github.com/yusufpapurcu/wmi v1.2.4/go.mod h1:SBZ9tNy3G9/m5Oi98Zks0QjeHVDvuK0qfxQmPyzfmi0=
 go.nhat.io/testcontainers-extra v0.13.0 h1:kDbhkboyTW0c9mrqAlYHTGXWgeNe+p4pgL6Jp9Yc4ak=
 go.nhat.io/testcontainers-extra v0.13.0/go.mod h1:dXurSePsmx5Wt3GKZuFPJ7gxdBL7qD52zC+mbRrPWE0=
-go.nhat.io/testcontainers-registry v0.14.0 h1:OUO4XJhV55Es4BKTsUhQ6v4bJJDJahSn3Yx43CvdllE=
-go.nhat.io/testcontainers-registry v0.14.0/go.mod h1:PxISObu2+T9U3k4QwSpCk3zndJ8IedX0mIup6y6XF+k=
+go.nhat.io/testcontainers-registry v0.15.0 h1:KeiSWb+XCTyMQmYWuswar2YLCa3kawcC49jbP9C30+U=
+go.nhat.io/testcontainers-registry v0.15.0/go.mod h1:PaVdKOjEwGKorCvDOyRO1wMeLiOINyEuLf2DynGtvRM=
 go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0 h1:jq9TW8u3so/bN+JPT166wjOI6/vQPF6Xe7nMNIltagk=
 go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.49.0/go.mod h1:p8pYQP+m5XfbZm9fxtSKAbM6oIllS7s2AfxrChvc7iw=
 go.opentelemetry.io/otel v1.24.0 h1:0LAOdjNmQeSTzGBzduGe/rU4tZhMwL5rWgtp9Ku5Jfo=
