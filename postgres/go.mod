@@ -6,7 +6,7 @@ toolchain go1.21.6
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.17.0
-	github.com/jackc/pgx/v4 v4.18.2
+	github.com/jackc/pgx/v4 v4.18.3
 	github.com/stretchr/testify v1.9.0
 	go.nhat.io/testcontainers-extra v0.13.0
 	go.nhat.io/testcontainers-registry v0.15.0
