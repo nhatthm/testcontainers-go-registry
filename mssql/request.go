@@ -20,7 +20,7 @@ func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerO
 	finalOpts[0] = testcontainers.PopulateHostPortEnv
 	finalOpts[1] = testcontainers.WithCallback(func(ctx context.Context, c testcontainers.Container, _ testcontainers.ContainerRequest) error {
 		code, _, err := c.Exec(ctx, []string{
-			"/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", dbPassword, "-Q", `USE [master]; CREATE DATABASE ` + dbName + `;`,
+			"/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-C", "-U", "sa", "-P", dbPassword, "-Q", `USE [master]; CREATE DATABASE ` + dbName + `;`,
 		})
 		if err != nil {
 			return fmt.Errorf("could not create database: %w", err)
@@ -50,7 +50,7 @@ func Request(dbName, dbPassword string, opts ...testcontainers.GenericContainerO
 			WaitingFor: wait.ForAll(
 				wait.ForLog("Recovery is complete").
 					WithStartupTimeout(3*time.Minute),
-				extrawait.ForHealthCheckCmd("/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", dbPassword, "-Q", `"SELECT 1"`).
+				extrawait.ForHealthCheckCmd("/opt/mssql-tools18/bin/sqlcmd", "-S", "localhost", "-C", "-U", "sa", "-P", dbPassword, "-Q", `"SELECT 1"`).
 					WithRetries(3).
 					WithStartPeriod(5*time.Minute).
 					WithTestTimeout(5*time.Second).
