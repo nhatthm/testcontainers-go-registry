@@ -108,8 +108,6 @@ github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9de
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yusufpapurcu/wmi v1.2.4 h1:zFUKzehAFReQwLys1b/iSMl+JQGSCSjtVqQn9bBrPo0=
 github.com/yusufpapurcu/wmi v1.2.4/go.mod h1:SBZ9tNy3G9/m5Oi98Zks0QjeHVDvuK0qfxQmPyzfmi0=
-go.nhat.io/testcontainers-extra v0.13.0 h1:kDbhkboyTW0c9mrqAlYHTGXWgeNe+p4pgL6Jp9Yc4ak=
-go.nhat.io/testcontainers-extra v0.13.0/go.mod h1:dXurSePsmx5Wt3GKZuFPJ7gxdBL7qD52zC+mbRrPWE0=
 go.nhat.io/testcontainers-extra v0.14.0 h1:pGBqazB5I2OOhXgjNrKEiXTzjjLReY9FPSLcYUrkYXY=
 go.nhat.io/testcontainers-extra v0.14.0/go.mod h1:e8uciPE6t4eihgNp6J4NwEJKkYMBIwCPEvwHyjdvAlw=
 go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.53.0 h1:4K4tsIXefpVJtvA/8srF4V4y0akAoPHkIslgAkjixJA=

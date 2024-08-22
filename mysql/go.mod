@@ -10,7 +10,7 @@ require (
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.33.0
 	go.nhat.io/testcontainers-extra v0.14.0
-	go.nhat.io/testcontainers-registry v0.15.0
+	go.nhat.io/testcontainers-registry v0.16.0
 )
 
 require (
