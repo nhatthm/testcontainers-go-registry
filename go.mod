@@ -4,7 +4,7 @@ go 1.22.0
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.1
-	go.nhat.io/testcontainers-extra v0.14.0
+	go.nhat.io/testcontainers-extra v0.15.0
 )
 
 require (
