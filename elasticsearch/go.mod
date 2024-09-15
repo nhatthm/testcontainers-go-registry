@@ -8,7 +8,7 @@ require (
 	github.com/docker/docker v27.2.1+incompatible
 	github.com/docker/go-units v0.5.0
 	github.com/stretchr/testify v1.9.0
-	go.nhat.io/testcontainers-extra v0.14.0
+	go.nhat.io/testcontainers-extra v0.15.0
 )
 
 require (
