@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/golang-migrate/migrate/v4 v4.18.1
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.33.0
 	go.nhat.io/testcontainers-extra v0.15.0
 	go.nhat.io/testcontainers-registry v0.17.0
