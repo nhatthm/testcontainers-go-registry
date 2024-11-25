@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/docker/docker v27.3.1+incompatible
 	github.com/docker/go-units v0.5.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	go.nhat.io/testcontainers-extra v0.15.0
 )
 
