@@ -10,5 +10,5 @@ import (
 func StartGenericContainer(ctx context.Context, opts ...testcontainers.GenericContainerOption) (testcontainers.Container, error) {
 	r := Request(opts...)
 
-	return testcontainers.StartGenericContainer(ctx, r.Request, r.Options...)
+	return testcontainers.StartGenericContainer(ctx, r.Request, r.Options...) //nolint: wrapcheck
 }

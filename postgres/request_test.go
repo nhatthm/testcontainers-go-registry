@@ -28,14 +28,14 @@ func TestRunMigrations(t *testing.T) {
 		testcontainers.ContainerCallback(func(context.Context, testcontainers.Container, testcontainers.ContainerRequest) error {
 			db, err := sql.Open("pgx", os.ExpandEnv(pg.DSN(dbName, dbUser, dbPassword)))
 			if err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			row := db.QueryRow("SELECT COUNT(1) FROM customer LIMIT 1")
 			result := 0
 
 			if err := row.Scan(&result); err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			assert.Equal(t, 1, result)

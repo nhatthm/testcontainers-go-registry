@@ -2,7 +2,7 @@ MODULE_NAME=testcontainers-registry
 
 VENDOR_DIR = vendor
 
-GOLANGCI_LINT_VERSION ?= v1.60.1
+GOLANGCI_LINT_VERSION ?= v2.2.1
 
 GO ?= go
 GOLANGCI_LINT ?= $(shell go env GOPATH)/bin/golangci-lint-$(GOLANGCI_LINT_VERSION)

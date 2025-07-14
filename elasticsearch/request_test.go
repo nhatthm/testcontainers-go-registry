@@ -24,19 +24,19 @@ func TestRunMigrations(t *testing.T) {
 
 			request, err := http.NewRequest(http.MethodGet, esURL+"_cat/indices?format=json", nil)
 			if err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			resp, err := http.DefaultClient.Do(request)
 			if err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			defer resp.Body.Close() // nolint: errcheck,gosec
 
 			data, err := io.ReadAll(resp.Body)
 			if err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			assert.True(t, strings.HasPrefix(string(data), "["))
