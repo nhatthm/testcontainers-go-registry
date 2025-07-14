@@ -26,14 +26,14 @@ func TestRunMigrations(t *testing.T) {
 		testcontainers.ContainerCallback(func(context.Context, testcontainers.Container, testcontainers.ContainerRequest) error {
 			db, err := sql.Open("sqlserver", os.ExpandEnv(mssql.DSN(dbName, dbPassword)))
 			if err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			row := db.QueryRow("SELECT COUNT(1) FROM customer;")
 			result := 0
 
 			if err := row.Scan(&result); err != nil {
-				return err
+				return err //nolint: wrapcheck
 			}
 
 			assert.Equal(t, 1, result)
