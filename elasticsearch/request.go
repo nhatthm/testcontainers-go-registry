@@ -18,25 +18,27 @@ func Request(opts ...testcontainers.GenericContainerOption) testcontainers.Start
 	return testcontainers.StartGenericContainerRequest{
 		Request: testcontainers.ContainerRequest{
 			Name:         "elasticsearch",
-			Image:        "docker.elastic.co/elasticsearch/elasticsearch:7.15.1",
+			Image:        "docker.elastic.co/elasticsearch/elasticsearch:9.0.0",
 			ExposedPorts: []string{":9200"},
 			Env: map[string]string{
 				"xpack.security.enabled": "false",
 				"discovery.type":         "single-node",
 				"ES_JAVA_OPTS":           "-Xms512m -Xmx512m",
 			},
-			Resources: container.Resources{Ulimits: []*units.Ulimit{
-				{
-					Name: "memlock",
-					Hard: -1,
-					Soft: -1,
-				},
-				{
-					Name: "nofile",
-					Hard: 65536,
-					Soft: 65536,
-				},
-			}},
+			HostConfigModifier: func(c *container.HostConfig) {
+				c.Resources.Ulimits = []*units.Ulimit{ //nolint: staticcheck
+					{
+						Name: "memlock",
+						Hard: -1,
+						Soft: -1,
+					},
+					{
+						Name: "nofile",
+						Hard: 65536,
+						Soft: 65536,
+					},
+				}
+			},
 			WaitingFor: extrawait.ForHealthCheckCmd("curl", "--silent", "--fail", "localhost:9200/_cluster/health").
 				WithRetries(3).
 				WithStartPeriod(time.Minute).
