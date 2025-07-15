@@ -9,7 +9,7 @@ require (
 	github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver v1.17.4
 	go.nhat.io/testcontainers-extra v0.16.0
-	go.nhat.io/testcontainers-registry v0.17.0
+	go.nhat.io/testcontainers-registry v0.18.0
 )
 
 require (

@@ -141,8 +141,8 @@ go.mongodb.org/mongo-driver v1.17.4 h1:jUorfmVzljjr0FLzYQsGP8cgN/qzzxlY9Vh0C9KFX
 go.mongodb.org/mongo-driver v1.17.4/go.mod h1:Hy04i7O2kC4RS06ZrhPRqj/u4DTYkFDAAccj+rVKqgQ=
 go.nhat.io/testcontainers-extra v0.16.0 h1:LKAqxWE8BHXuRunE++vuA4JSSVsTW+J3m2GEXBeALwI=
 go.nhat.io/testcontainers-extra v0.16.0/go.mod h1:kFUWp4XsNWcrFCgMHROE99HX+6pp82h6qCtU8sA9/Oo=
-go.nhat.io/testcontainers-registry v0.17.0 h1:5vBp3B3ejwqFpCcyhwML3RGW4CD2+YS0zY6MduD2410=
-go.nhat.io/testcontainers-registry v0.17.0/go.mod h1:a2mES7zZPbery656HbzQUADvb8vZRc8qsqE6DO9LItw=
+go.nhat.io/testcontainers-registry v0.18.0 h1:AhX91+PZnziXyj1+YQUAXZfgncXXdvarWYXBGXHUG3Y=
+go.nhat.io/testcontainers-registry v0.18.0/go.mod h1:eRPpTrgfDkRzApOil5kjHJp5WUE+0fJl7+qmWSN0lZ4=
 go.opentelemetry.io/auto/sdk v1.1.0 h1:cH53jehLUN6UFLY71z+NDOiNJqDdPRaXzTel0sJySYA=
 go.opentelemetry.io/auto/sdk v1.1.0/go.mod h1:3wSPjt5PWp2RhlCcmmOial7AvC4DQqZb7a7wCow3W8A=
 go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.62.0 h1:Hf9xI/XLML9ElpiHVDNwvqI0hIFlzV8dgIr35kV1kRU=
