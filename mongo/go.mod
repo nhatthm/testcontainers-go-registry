@@ -8,8 +8,8 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.18.3
 	github.com/stretchr/testify v1.10.0
 	go.mongodb.org/mongo-driver v1.17.4
-	go.nhat.io/testcontainers-extra v0.16.0
-	go.nhat.io/testcontainers-registry v0.17.0
+	go.nhat.io/testcontainers-extra v0.17.0
+	go.nhat.io/testcontainers-registry v0.18.0
 )
 
 require (
@@ -56,7 +56,7 @@ require (
 	github.com/power-devops/perfstat v0.0.0-20240221224432-82ca36839d55 // indirect
 	github.com/shirou/gopsutil/v4 v4.25.6 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
-	github.com/testcontainers/testcontainers-go v0.37.0 // indirect
+	github.com/testcontainers/testcontainers-go v0.38.0 // indirect
 	github.com/tklauser/go-sysconf v0.3.15 // indirect
 	github.com/tklauser/numcpus v0.10.0 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
