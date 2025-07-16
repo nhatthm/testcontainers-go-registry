@@ -6,7 +6,7 @@ toolchain go1.23.7
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.3
-	go.nhat.io/testcontainers-extra v0.16.0
+	go.nhat.io/testcontainers-extra v0.17.0
 )
 
 require (
